@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Tech Store</h1>
+
+    <input type="text" id="search" placeholder="Search products...">
+
+    <select id="categoryFilter">
+        <option value="all">All</option>
+        <option value="Laptop">Laptop</option>
+        <option value="Mobile">Mobile</option>
+        <option value="Accessories">Accessories</option>
+    </select>
+
+    <div class="cart-icon">
+        🛒 <span id="cartCount">0</span>
+    </div>
+</header>
+
+<div class="container">
+    <div class="products" id="productList"></div>
+
+    <div class="cart">
+        <h2>Your Cart</h2>
+        <div id="cartItems"></div>
+        <h3>Total: ₹ <span id="cartTotal">0</span></h3>
+        <button class="checkout-btn" onclick="checkout()">Checkout</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
